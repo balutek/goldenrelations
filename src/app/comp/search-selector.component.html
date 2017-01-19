@@ -1,0 +1,21 @@
+<div class="well">
+
+  <ul class="list-group">
+    <li class="list-group-item justify-content-between"
+        *ngFor="let usedElement of usedElements">
+      {{displayValue(usedElement)}}
+      <button type="button"
+              class="close pull-right"
+              aria-label="Close"
+              (click)="onItemRemove(usedElement)">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </li>
+  </ul>
+
+  <input type="text"
+         class="form-control"
+         [(ngModel)]="model"
+         [ngbTypeahead]="search"
+         (selectItem)="onSelectItem($event)" />
+</div>

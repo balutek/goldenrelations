@@ -3,18 +3,23 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+import { MainComponent } from './main.component';
+
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import {SearchSelectorComponent} from "./comp/search-selector.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    MainComponent,
+    SearchSelectorComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    NgbModule.forRoot()
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [MainComponent]
 })
 export class AppModule { }
