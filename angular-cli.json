@@ -51,7 +51,7 @@
     "prefixInterfaces": false,
     "inline": {
       "style": true,
-      "template": true
+      "template": false
     },
     "spec": {
       "class": false,

@@ -1,0 +1,4 @@
+interface Apartment {
+  pictures: string[];
+
+}

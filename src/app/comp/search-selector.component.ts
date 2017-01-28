@@ -22,14 +22,13 @@ export class SearchSelectorComponent {
   @Input()
   displayValueFunction: (value: any) => string;
 
-  usedElements: any[] = [];
+  usedElements: any[] = [this.availableElements[0]];
 
   model: any;
 
   constructor() { }
 
-  search = (text: Observable<string>) =>
-  {
+  search = (text: Observable<string>) => {
     return text
       .debounceTime(200)
       .distinctUntilChanged()
@@ -40,29 +39,24 @@ export class SearchSelectorComponent {
       );
   };
 
-  public onSelectItem(event: NgbTypeaheadSelectItemEvent)
-  {
+  public onSelectItem(event: NgbTypeaheadSelectItemEvent) {
     this.usedElements.push(event.item);
   }
 
-  public onItemRemove(element: any)
-  {
+  public onItemRemove(element: any) {
     this.usedElements.splice(this.usedElements.indexOf(element), 1);
   }
 
 
 
-  public displayValue(element: any) : string
-  {
-    if (this.displayValueFunction == null)
-    {
+  public displayValue(element: any) : string {
+    if (this.displayValueFunction == null) {
       return <string> element;
     }
     return this.displayValueFunction(element);
   }
 
-  private getUnusedElements(): any[]
-  {
+  private getUnusedElements(): any[] {
     return _.difference(this.availableElements, this.usedElements);
   }
 
