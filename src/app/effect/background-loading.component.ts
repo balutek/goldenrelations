@@ -53,13 +53,11 @@ export class BackgroundLoadingComponent implements AfterViewInit
 
   ngAfterViewInit(): void {
     let backgroundTimer = Observable.timer(0,5000);
-    backgroundTimer.subscribe(x => this.loadBackgroundImage(x));
+    backgroundTimer.subscribe(x => this.loadBackgroundImage());
   }
 
-  private loadBackgroundImage(num: number) {
-    console.log(num);
+  private loadBackgroundImage() {
     let imageUrl = this.imagesUrl[this.imageIndexToTake];
-    console.log(num + " " + imageUrl);
     this.http.get(imageUrl)
       .subscribe((data: Response) => {
         if(data.ok) {
@@ -69,16 +67,9 @@ export class BackgroundLoadingComponent implements AfterViewInit
             this.rearBackground = 'url('+ imageUrl +')';
           }
 
-          console.log("front and rear " + num + " " + this.frontBackground + " " + this.rearBackground);
           this.showFrontBackground = this.shouldShowFrontBackground;
-
-          console.log(num + "showFrontBackground: " + this.showFrontBackground);
-          console.log(num + "shouldShowFrontBackground: " + this.shouldShowFrontBackground);
           this.shouldShowFrontBackground = !this.shouldShowFrontBackground;
-          console.log(num + "shouldShowFrontBackground: " + this.shouldShowFrontBackground);
           this.imageIndexToTake = (this.imageIndexToTake+1)%this.imagesUrl.length;
-          console.log(num + "imageIndexToTake: " + this.imageIndexToTake);
-
         }
       });
   }

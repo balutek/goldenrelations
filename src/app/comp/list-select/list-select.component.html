@@ -1,0 +1,14 @@
+<!--<div class="list-group">-->
+<ng-container *ngFor="let listSelectElement of listSelectElements">
+  <ng-container *ngIf="showAll || isSelected(listSelectElement)">
+    <a href="#"
+       [@flyInOut]="'in'"
+       class="list-group-item list-group-item-action justify-content-between"
+       [class.active]="isSelected(listSelectElement)"
+       (click)="selectElement(listSelectElement)">
+      {{listSelectElement.text}}
+      <span class="badge badge-default badge-pill">{{listSelectElement.elementsCount}}</span>
+    </a>
+  </ng-container>
+</ng-container>
+<!--</div>-->

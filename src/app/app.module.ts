@@ -8,21 +8,23 @@ import { MainComponent } from './main.component';
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {SearchSelectorComponent} from "./comp/search-selector.component";
 import { ResultListComponent } from './result/result-list.component';
-import { BorderedPanelComponent } from './comp/panel/bordered-panel.component';
 import { BackgroundLoadingComponent } from './effect/background-loading.component';
+import {Select2Module} from "ng2-select2";
+import { ListSelectComponent } from './comp/list-select/list-select.component';
 
 @NgModule({
   declarations: [
     MainComponent,
     SearchSelectorComponent,
     ResultListComponent,
-    BorderedPanelComponent,
-    BackgroundLoadingComponent
+    BackgroundLoadingComponent,
+    ListSelectComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    Select2Module,
     NgbModule.forRoot()
   ],
   providers: [],
