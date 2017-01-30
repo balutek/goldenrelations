@@ -6,26 +6,30 @@ import { HttpModule } from '@angular/http';
 import { MainComponent } from './main.component';
 
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
-import {SearchSelectorComponent} from "./comp/search-selector.component";
-import { ResultListComponent } from './result/result-list.component';
+import {SearchSelectorComponent} from "./unused/search-selector.component";
 import { BackgroundLoadingComponent } from './effect/background-loading.component';
 import {Select2Module} from "ng2-select2";
 import { ListSelectComponent } from './comp/list-select/list-select.component';
+import { PageNotFoundComponent } from './page-not-found.component';
+import {AppRoutingModule} from "./app-routing.module";
+import {OfferBrowserModule} from "./offer-browser/offer-browser.module";
 
 @NgModule({
   declarations: [
     MainComponent,
     SearchSelectorComponent,
-    ResultListComponent,
     BackgroundLoadingComponent,
-    ListSelectComponent
+    ListSelectComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     Select2Module,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    OfferBrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [MainComponent]

@@ -9,24 +9,17 @@
       {id:'id2',text:'Warszawa',elementsCount:8}
       ]"></gr-list-select>
       <gr-list-select [listSelectElements]="[
+      {id:'id',text:'Mieszkania',elementsCount:2},
+      {id:'id1',text:'Domy',elementsCount:5}
+      ]"></gr-list-select>
+      <gr-list-select [listSelectElements]="[
       {id:'id',text:'Wynajem',elementsCount:2},
       {id:'id1',text:'Sprzedaż',elementsCount:5}
       ]"></gr-list-select>
-      <!--<gr-bordered-panel>-->
-      <!--</gr-bordered-panel>-->
-      <!--<gr-search-selector [availableElements]="['hahaha', 'hehehe', 'hohohoh','hahaha', 'hehehe', 'hohohoh']"></gr-search-selector>-->
-      <!--<gr-search-selector [availableElements]="['hahaha', 'hehehe', 'hohohoh','hahaha', 'hehehe', 'hohohoh']"></gr-search-selector>-->
-      <!--<gr-search-selector [availableElements]="['hahaha', 'hehehe', 'hohohoh','hahaha', 'hehehe', 'hohohoh']"></gr-search-selector>-->
-      <!--<gr-search-selector [availableElements]="['hahaha', 'hehehe', 'hohohoh','hahaha', 'hehehe', 'hohohoh']"></gr-search-selector>-->
-      <!--<gr-search-selector [availableElements]="['hahaha', 'hehehe', 'hohohoh','hahaha', 'hehehe', 'hohohoh']"></gr-search-selector>-->
-      <!--<gr-search-selector [availableElements]="['hahaha', 'hehehe', 'hohohoh','hahaha', 'hehehe', 'hohohoh']"></gr-search-selector>-->
-      <!--<gr-search-selector [availableElements]="['hahaha', 'hehehe', 'hohohoh','hahaha', 'hehehe', 'hohohoh']"></gr-search-selector>-->
-      <!--<gr-search-selector [availableElements]="['hahaha', 'hehehe', 'hohohoh','hahaha', 'hehehe', 'hohohoh']"></gr-search-selector>-->
-      <!--<gr-bordered-panel>-->
-        <!--blbalbladjljld-->
-      <!--</gr-bordered-panel>-->
     </div>
-    <div class="col-md-6"></div>
+    <div class="col-md-6">
+      <router-outlet></router-outlet>
+    </div>
     <div class="col-md-3"></div>
   </div>
 </div>
