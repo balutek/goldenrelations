@@ -1,7 +1,6 @@
-<!--<div class="list-group">-->
 <ng-container *ngFor="let listSelectElement of listSelectElements">
   <ng-container *ngIf="showAll || isSelected(listSelectElement)">
-    <a routerLink="/offers"
+    <a routerLink="{{listSelectElement.path}}"
        [@flyInOut]="'in'"
        class="list-group-item list-group-item-action justify-content-between"
        [class.active]="isSelected(listSelectElement)"
@@ -11,4 +10,3 @@
     </a>
   </ng-container>
 </ng-container>
-<!--</div>-->

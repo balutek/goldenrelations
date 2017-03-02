@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {Routes, RouterModule} from "@angular/router";
-import {OfferBrowserComponent} from "./offer-browser.component";
+import {OfferBrowserComponent} from "./offer-browser/offer-browser.component";
 
 const offersRoutes : Routes = [
   {path: 'offers', component: OfferBrowserComponent}
@@ -18,4 +18,4 @@ const offersRoutes : Routes = [
   ],
   declarations: []
 })
-export class OfferBrowserRoutingModule { }
+export class OfferRoutingModule { }

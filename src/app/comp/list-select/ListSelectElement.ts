@@ -1,3 +1,3 @@
 interface ListSelectElement {
-  constructor (id: string, text: string, elementsCount: number);
+  constructor (id: number, text: string, path: string, elementsCount: number);
 }

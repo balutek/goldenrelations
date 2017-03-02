@@ -1,0 +1,52 @@
+{
+  "offers": [
+    {
+      "id": "leijseoirj",
+      "name": "Racławicka 81/10 Piękna kawalerka",
+      "city": "Wrocław",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "pictures": [
+        "https://static.pexels.com/photos/29410/pexels-photo-29410.jpg",
+        "https://static.pexels.com/photos/226407/pexels-photo-226407.jpeg"
+      ],
+      "price": 2500,
+      "rent": 500,
+      "area": 45,
+      "roomsNumber": 4,
+      "floor": 1,
+      "buildingType": "Mieszkanie"
+    },
+    {
+      "id": "seriwejf",
+      "name": "Sliczna 58A/b, przepiękne mieszkanie w centrum",
+      "city": "Wrocław",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "pictures": [
+        "https://static.pexels.com/photos/106936/pexels-photo-106936.jpeg",
+        "https://static.pexels.com/photos/29643/pexels-photo.jpg"
+      ],
+      "price": 3500,
+      "rent": 400,
+      "area": 63,
+      "roomsNumber": 3,
+      "floor": 5,
+      "buildingType": "Dom"
+    },
+    {
+      "id": "wekufhwkehf",
+      "name": "Sliczna 58A/b, przepiękne mieszkanie w centrum",
+      "city": "Kraków",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "pictures": [
+        "https://static.pexels.com/photos/106936/pexels-photo-106936.jpeg",
+        "https://static.pexels.com/photos/29643/pexels-photo.jpg"
+      ],
+      "price": 3200,
+      "rent": 400,
+      "area": 63,
+      "roomsNumber": 3,
+      "floor": 5,
+      "buildingType": "Mieszkanie"
+    }
+  ]
+}
